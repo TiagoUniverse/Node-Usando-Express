@@ -18,7 +18,8 @@ app.get("/sobre", function(req,res){
 
 app.get("/ola/:cargo/:nome/:idade", function(req, res){
     // res.send(req.params);
-    res.send("<h1>Olá,  " + req.params.nome +"!</h1>")
+    // ele aceita html
+    res.send("<h1>Olá,  " + req.params.nome +"!</h1><h2>Seu cargo é: " + req.params.cargo +"</h2><h2>Sua idade é: " + req.params.idade +"</h2>");
 })
 
 // App.listen tem que ser o último código 
