@@ -16,11 +16,6 @@ app.get("/sobre", function(req,res){
     res.send("Data: 28/09/23");
 });
 
-app.get("/ola/:cargo/:nome/:idade", function(req, res){
-    // res.send(req.params);
-    res.send("<h1>Olá,  " + req.params.nome +"!</h1>")
-})
-
 // App.listen tem que ser o último código 
 app.listen(8081, function(){
     console.log("Servidor rodando na url http://localhost:8081 ");
